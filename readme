@@ -1,0 +1,58 @@
+Joseph R Staugaard III
+UPenn Class 201901Online2
+GifTastic Homework / Week 6 / Ajax
+
+Files:
+index.html (landing page)
+java.js
+
+Links needed:
+java.js
+boot strap 4
+jquery
+
+style.css not used
+
+Landing Page:
+Title
+Form to add new animal button
+Diplay list of animal buttons
+after click, display images returned
+
+Java.js
+global variables
+animal : array of animals
+
+Functions:
+displayAnimalInfo ()
+    local variables
+    queryURL : url for giphy, animal = this.data-name
+    rating : response.rating
+    imgURL : response.images...
+    imgURL : response.images...
+    columnCard : top level div for diplaying animal - class of ccard
+    animalCard
+    animalHeader
+    animalCardBody
+    animalPic : lowest level of div for displaying animal
+
+    ccard: empty (columnCard, class=ccard)
+    AJAX, queryURL - return response
+    build card be appending columnCard to animalCard
+    prepend columnCard to #animal-view
+
+
+
+
+renderButtons()
+    #buttons-view - empty
+    loop from i to < animal.length and create buttons
+
+
+Events:
+#add-animal, on click
+    push #animal-input on animal array
+    renderButtons()
+
+.animal-btn, on click 
+    displayAnimalInfo
